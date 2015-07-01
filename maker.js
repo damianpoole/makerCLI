@@ -15,7 +15,15 @@ var fs = require('fs'),
 program
     .parse(process.argv);
 
-key = fs.readFileSync(home + '/.maker', 'utf8');
+try {
+    key = fs.readFileSync(home + '/.maker', 'utf8');
+} catch (error) {
+    return console.log('Can\'t read config. It is used to store your Maker secret key.');
+}
+
+if (!program.args[0]) {
+    return console.log('An Event name is required.');
+}
 
 // Construct the url
 url = 'https://maker.ifttt.com/trigger/' + program.args[0] + '/with/key/' + key;
@@ -41,5 +49,5 @@ request({url: url, form: form}, function (error, response, body) {
         return console.log('Invalid Status Code Returned:', response.statusCode);
     }
 
-    console.log('Maker recipe has run.');
+    console.log('Maker recipe request sent.');
 });
