@@ -1,18 +1,24 @@
 #!/usr/bin/env node
 
-var request = require('request'),
+var fs = require('fs'),
+    request = require('request'),
     program = require('commander'),
+    osenv = require('osenv'),
+    home = osenv.home(),
     url,
     value1,
     value2,
     value3,
-    form = {};
+    form = {},
+    key;
 
 program
     .parse(process.argv);
 
+key = fs.readFileSync(home + '/.maker', 'utf8');
+
 // Construct the url
-url = 'https://maker.ifttt.com/trigger/' + program.args[0] + '/with/key/c0CYQqUu-Py-rmAaew-Y3N'
+url = 'https://maker.ifttt.com/trigger/' + program.args[0] + '/with/key/' + key;
 
 if (program.args[1]) {
     form['value1'] = program.args[1];

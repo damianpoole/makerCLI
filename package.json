@@ -9,7 +9,8 @@
   "author": "Damian Poole",
   "license": "ISC",
   "dependencies": {
-    "commander": "^2.8.1"
+    "commander": "^2.8.1",
+    "osenv": "^0.1.3"
   },
   "bin": {
     "maker": "maker.js"
