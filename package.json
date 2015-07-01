@@ -1,5 +1,5 @@
 {
-  "name": "makerCLI",
+  "name": "maker-cli",
   "version": "1.0.0",
   "description": "Command Line application for sending messages to IFTTT Maker",
   "main": "maker.js",
@@ -7,10 +7,15 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Damian Poole",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/damianpoole/makerCLI"
+  },
+  "license": "MIT",
   "dependencies": {
     "commander": "^2.8.1",
-    "osenv": "^0.1.3"
+    "osenv": "^0.1.3",
+    "request": "^2.58.0"
   },
   "preferGlobal": true,
   "bin": {
