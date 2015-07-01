@@ -1,6 +1,6 @@
 {
   "name": "maker-cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Command Line application for sending messages to IFTTT Maker",
   "main": "maker.js",
   "scripts": {
@@ -20,5 +20,6 @@
   "preferGlobal": true,
   "bin": {
     "maker": "maker.js"
-  }
+  },
+  "readmeFilename": "readme.md"
 }
