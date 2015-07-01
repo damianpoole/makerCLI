@@ -1,0 +1,17 @@
+{
+  "name": "makerCLI",
+  "version": "1.0.0",
+  "description": "Command Line application for sending messages to IFTTT Maker",
+  "main": "maker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Damian Poole",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^2.8.1"
+  },
+  "bin": {
+    "maker": "maker.js"
+  }
+}
