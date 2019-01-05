@@ -5,6 +5,9 @@
     },
     "extends": ["plugin:prettier/recommended"],
     "rules": {
-        "quotes": ["error", "single"]
+        "quotes": ["error", "single"],
+        "prettier/prettier": {
+            "indent": ["error", 4]
+        }
     }
 }
