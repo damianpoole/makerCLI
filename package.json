@@ -22,6 +22,10 @@
     "request": "^2.58.0"
   },
   "preferGlobal": true,
+  "prettier": {
+    "singleQuote": true,
+    "tabWidth": 4
+  },
   "bin": {
     "maker": "maker.js"
   },
