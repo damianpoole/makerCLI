@@ -4,7 +4,7 @@
   "description": "Command Line application for sending messages to IFTTT Maker",
   "main": "maker.js",
   "scripts": {
-    "test": "jest"
+    "test": "node --test"
   },
   "author": "Damian Poole",
   "repository": {
@@ -13,29 +13,23 @@
   },
   "license": "MIT",
   "dependencies": {
-    "commander": "^2.8.1",
-    "eslint": "^4.19.1",
-    "eslint-config-prettier": "^2.9.0",
-    "eslint-plugin-prettier": "^2.6.0",
-    "osenv": "^0.1.3",
-    "prettier": "^1.12.1",
-    "request": "^2.58.0"
+    "commander": "^2.20.3"
   },
   "preferGlobal": true,
   "prettier": {
     "singleQuote": true,
-    "tabWidth": 4
+    "tabWidth": 4,
+    "trailingComma": "none",
+    "arrowParens": "avoid"
   },
   "bin": {
     "maker": "maker.js"
   },
   "readmeFilename": "readme.md",
   "devDependencies": {
-    "eslint-config-standard": "^11.0.0",
-    "eslint-plugin-import": "^2.12.0",
-    "eslint-plugin-node": "^6.0.1",
-    "eslint-plugin-promise": "^3.7.0",
-    "eslint-plugin-standard": "^3.1.0",
-    "jest": "^23.6.0"
+    "eslint": "^10.15.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.7",
+    "prettier": "^3.10.1"
   }
 }
